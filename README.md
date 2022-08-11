@@ -13,11 +13,11 @@
     
  3. Запустить целевое приложение консольной командой:
  
-    - для интеграции с PostgreSQL:
-  
+  - для интеграции с PostgreSQL:
+ 
    `java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/db -jar artifacts/aqa-shop.jar`
   
-    - для интеграции с MySQL:
+   - для интеграции с MySQL:
   
    `java -Dspring.datasource.url=jdbc:mysql://localhost:3306/db -jar artifacts/aqa-shop.jar`
 

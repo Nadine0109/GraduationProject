@@ -13,16 +13,33 @@
     
  3. Запустить целевое приложение консольной командой:
  
-- для интеграции с PostgreSQL:
+    - для интеграции с PostgreSQL:
   
   `java -Dspring.datasource.url=jdbc:postgresql://localhost:5432/db -jar artifacts/aqa-shop.jar`
   
-- для интеграции с MySQL:
+    - для интеграции с MySQL:
   
   `java -Dspring.datasource.url=jdbc:mysql://localhost:3306/db -jar artifacts/aqa-shop.jar`
 
 
-#### **Запуск тестов:**
+ #### **Запуск тестов:**
 
-- с PostgreSQL: `gradlew clean test allureReport -Durl=jdbc:postgresql://localhost:5432/db`
-- с MySQL: `gradlew clean test allureReport -DdbURL=jdbc:mysql://localhost:3306/db`
+    - с PostgreSQL: `gradlew clean test allureReport -Durl=jdbc:postgresql://localhost:5432/db`
+    - с MySQL: `gradlew clean test allureReport -DdbURL=jdbc:mysql://localhost:3306/db`
+
+
+ #### **Завершение тестов и получение отчётов:**
+  Автоматические отчёты Gradle находятся в каталоге ./build/reports/tests/test
+
+  Открытие отчёта Allure с помощью команды:
+
+       - gradlew allureServe
+
+  Генерация отчёта также возможна с помощью команды:
+
+       - gradlew allureReport (каталог ./build/reports/allure-report)
+
+
+  Завершить работы контейнеров Docker можно с помощью команды:
+
+       - docker-compose down

@@ -24,5 +24,5 @@
 
 #### **Запуск тестов:**
 
-- При интеграции с PostgreSQL: `gradlew clean test allureReport -Durl=jdbc:postgresql://localhost:5432/db`
-- При интеграции с MySQL: `gradlew clean test allureReport -DdbURL=jdbc:mysql://localhost:3306/db`
+- с PostgreSQL: `gradlew clean test allureReport -Durl=jdbc:postgresql://localhost:5432/db`
+- с MySQL: `gradlew clean test allureReport -DdbURL=jdbc:mysql://localhost:3306/db`

@@ -74,7 +74,7 @@ public class TestingDB {
     }
 
     @Test
-    @DisplayName("Оплатить с одобренной карты и получить запись суммы из БД")
+    @DisplayName("Оплатить с одобренной карты и получить соответсвующую запись суммы из БД")
     void shouldPayByApprovedCardAndGetRightAmount() {
         var paymentPage = tourSuggestionPage.ordinaryPayment();
         var approvedPayment = DataHelper.approvedPayment(DataHelper.randomPlusMonth());
@@ -95,7 +95,7 @@ public class TestingDB {
     }
 
     @Test
-    @DisplayName("Оплатить с помощью одобренного кредита и получить запись суммы из БД")
+    @DisplayName("Оплатить с помощью одобренного кредита и получить соответсвующую запись суммы из БД")
     void shouldPayByApprovedCreditCardAndGetRightAmount() {
         var paymentPage = tourSuggestionPage.creditPayment();
         var approvedPayment = DataHelper.approvedPayment(DataHelper.randomPlusMonth());

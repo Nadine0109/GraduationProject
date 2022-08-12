@@ -43,3 +43,9 @@
   Завершить работы контейнеров Docker можно с помощью команды:
 
        - docker-compose down
+
+### Документация по проекту:
+- [План тестирования](https://github.com/Nadine0109/GraduationProject/blob/master/Documentation/Plan.md)
+- [Отчёт по итогам тестирования](https://github.com/Nadine0109/GraduationProject/blob/master/Documentation/Report.md)
+- [Отчёт по итогам автоматизации](https://github.com/Nadine0109/GraduationProject/blob/master/Documentation/Summary.md)
+- [Баг-репорты](https://github.com/Nadine0109/GraduationProject/issues)
